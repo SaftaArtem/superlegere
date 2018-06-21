@@ -15,6 +15,12 @@
             </arguments>
         </referenceBlock>
 
+        <referenceBlock name="top.links">
+            <arguments>
+                <argument name="template" xsi:type="string">Magento_Theme::html/account_links.phtml</argument>
+            </arguments>
+        </referenceBlock>
+
         <referenceContainer name="root">
             <container name="site.header" as="site.header" htmlTag="header" htmlClass="site-header" before="-">
                 <container name="container.fluid" as="container.fluid" htmlClass="container-fluid" htmlTag="div">
@@ -37,6 +43,7 @@
                 </container>
             </container>
         </referenceContainer>
+
 
 
         <move element="logo" as="logo" destination="ves_header"/>
