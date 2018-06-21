@@ -14,9 +14,14 @@
         </referenceBlock>
 
 
-        <referenceContainer name="container.fluid">
+        <referenceContainer name="root">
+            <container name="test" as="test" label="Page Header Container"  htmlTag="header" htmlClass="page-header" before="-">
+                <container name="container.fluid" as="container_fluid" label="bootstrap container-fluid" htmlTag="div" htmlClass="container-fluid" />
+            </container>
 
         </referenceContainer>
+
+
 
 
         <move element="logo" as="logo" destination="container.fluid"/>
